@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    background-color: #FDFBF7;
+    color: #081510;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom scrollbar for a refined aesthetic */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F9F4EA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1C3F32;
+  border-radius: 9999px;
+  border: 2px solid #F9F4EA;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0D211A;
+}
